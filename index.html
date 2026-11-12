@@ -1175,10 +1175,13 @@
       setStatus('', '');
       if (!contactForm.reportValidity()) return;
       if (document.getElementById('company-site').value) return;
-      if (EMAIL_DESTINO === 'leonardosilva200826@gmail.com' || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(EMAIL_DESTINO)) {
-        setStatus('Formulário ainda não ativado pela equipe. Entre em contato pessoalmente na bancada.', 'error');
-        return;
-      }
+      
+      const EMAIL_DESTINO = "leonardosilva200826@gmail.com";
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(EMAIL_DESTINO)) {
+    setStatus('Configure um e-mail válido para receber as mensagens.', 'error');
+    return;
+    }
+      
       const dados = new FormData(contactForm);
       dados.delete('_honey');
       const payload = Object.fromEntries(dados.entries());
