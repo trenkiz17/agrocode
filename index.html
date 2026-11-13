@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -22,15 +21,12 @@
       --gold: #f6bf68;
       --shadow: 0 18px 50px rgba(13, 53, 40, .08)
     }
-
     * {
       box-sizing: border-box
     }
-
     html {
       scroll-behavior: smooth
     }
-
     body {
       margin: 0;
       background: var(--cream);
@@ -38,21 +34,17 @@
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
       line-height: 1.6
     }
-
     a {
       color: inherit;
       text-decoration: none
     }
-
     button {
       font: inherit
     }
-
     .wrap {
       width: min(1140px, calc(100% - 42px));
       margin: auto
     }
-
     .sitebar {
       position: sticky;
       top: 0;
@@ -61,7 +53,6 @@
       backdrop-filter: blur(18px);
       border-bottom: 1px solid rgba(16, 59, 48, .1)
     }
-
     .nav {
       display: flex;
       align-items: center;
@@ -69,7 +60,6 @@
       min-height: 75px;
       gap: 18px
     }
-
     .brand {
       display: flex;
       align-items: center;
@@ -79,7 +69,6 @@
       font-size: 1.55rem;
       color: var(--pine)
     }
-
     .brand-mark {
       display: grid;
       place-items: center;
@@ -88,12 +77,10 @@
       background: var(--pine);
       border-radius: 12px
     }
-
     .brand-mark svg {
       width: 23px;
       height: 23px
     }
-
     .nav-links {
       display: flex;
       align-items: center;
@@ -102,11 +89,9 @@
       font-weight: 700;
       color: #3c5e50
     }
-
     .nav-links a:hover {
       color: #16845b
     }
-
     .nav-cta {
       background: var(--pine);
       padding: 11px 18px;
@@ -116,18 +101,15 @@
       font-weight: 750;
       white-space: nowrap
     }
-
     .nav-cta:hover {
       background: #245947
     }
-
     .hero {
       overflow: hidden;
       position: relative;
       background: var(--pine);
       color: white
     }
-
     .hero:before {
       content: "";
       position: absolute;
@@ -138,7 +120,6 @@
       border-radius: 50%;
       background: rgba(206, 232, 149, .08)
     }
-
     .hero-inner {
       display: grid;
       grid-template-columns: 1.09fr .91fr;
@@ -149,7 +130,6 @@
       padding-bottom: 64px;
       position: relative
     }
-
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -163,14 +143,12 @@
       font-weight: 800;
       text-transform: uppercase
     }
-
     .eyebrow .dot {
       width: 7px;
       height: 7px;
       background: #cfe991;
       border-radius: 50%
     }
-
     .hero h1 {
       font-size: clamp(2.9rem, 5.9vw, 5.3rem);
       font-weight: 850;
@@ -178,25 +156,21 @@
       line-height: 1.03;
       margin: 23px 0
     }
-
     .hero h1 em {
       font-style: normal;
       color: var(--lime)
     }
-
     .hero p {
       max-width: 550px;
       color: #d2e5db;
       font-size: clamp(1rem, 1.7vw, 1.14rem);
       margin: 0 0 29px
     }
-
     .hero-actions {
       display: flex;
       gap: 12px;
       flex-wrap: wrap
     }
-
     .btn {
       display: inline-flex;
       align-items: center;
@@ -208,34 +182,28 @@
       font-size: .91rem;
       transition: transform .2s, background .2s
     }
-
     .btn:hover {
       transform: translateY(-2px)
     }
-
     .btn-primary {
       background: var(--lime);
       color: var(--pine)
     }
-
     .btn-ghost {
       border: 1px solid rgba(255, 255, 255, .35);
       color: white
     }
-
     .hero-art {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center
     }
-
     .scene {
       width: 100%;
       max-width: 520px;
       filter: drop-shadow(0 25px 35px rgba(0, 0, 0, .14))
     }
-
     .art-label {
       position: absolute;
       bottom: 11%;
@@ -252,16 +220,13 @@
       font-weight: 800;
       font-size: .79rem
     }
-
     .art-label span {
       color: #388a5e
     }
-
     .intro-line {
       background: #e9f1df;
       border-bottom: 1px solid #d9e9d0
     }
-
     .intro-content {
       display: flex;
       align-items: center;
@@ -271,24 +236,19 @@
       font-size: .9rem;
       color: #345344
     }
-
     .intro-content strong {
       color: var(--pine)
     }
-
     section {
       scroll-margin-top: 85px
     }
-
     .section {
       padding: 86px 0
     }
-
     .section-head {
       max-width: 680px;
       margin-bottom: 36px
     }
-
     .kicker {
       color: #398455;
       font-size: .76rem;
@@ -296,27 +256,23 @@
       text-transform: uppercase;
       font-weight: 900
     }
-
     .section-head h2 {
       font-size: clamp(2.1rem, 3.5vw, 3.2rem);
       line-height: 1.1;
       letter-spacing: -.05em;
       margin: 12px 0 14px
     }
-
     .section-head p {
       font-size: 1.04rem;
       color: var(--muted);
       margin: 0
     }
-
     .problem {
       display: grid;
       grid-template-columns: .9fr 1.1fr;
       gap: 38px;
       align-items: center
     }
-
     .quote {
       background: #e6f0df;
       border: 1px solid #d7e6cf;
@@ -324,45 +280,38 @@
       padding: 36px;
       position: relative
     }
-
     .quote .quote-mark {
       font-size: 5rem;
       line-height: .6;
       color: #86b48b;
       font-weight: 900
     }
-
     .quote h3 {
       font-size: clamp(1.65rem, 2.4vw, 2.3rem);
       line-height: 1.25;
       letter-spacing: -.04em;
       margin: 14px 0
     }
-
     .quote p {
       color: #547061;
       margin: 0
     }
-
     .problem-copy h2 {
       font-size: clamp(2rem, 3.5vw, 3rem);
       line-height: 1.14;
       letter-spacing: -.05em;
       margin: 11px 0 15px
     }
-
     .problem-copy p {
       color: var(--muted);
       font-size: 1.04rem
     }
-
     .pill-row {
       display: flex;
       gap: 9px;
       flex-wrap: wrap;
       margin-top: 20px
     }
-
     .pill {
       border: 1px solid #cdddcf;
       background: #fffefa;
@@ -372,19 +321,16 @@
       font-size: .79rem;
       color: #2e5b44
     }
-
     .features-section {
       background: white;
       border-top: 1px solid #edf1e9;
       border-bottom: 1px solid #edf1e9
     }
-
     .features {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 16px
     }
-
     .feature {
       background: var(--cream);
       border: 1px solid #e2e9df;
@@ -393,12 +339,10 @@
       min-height: 225px;
       transition: transform .2s, box-shadow .2s
     }
-
     .feature:hover {
       transform: translateY(-3px);
       box-shadow: var(--shadow)
     }
-
     .feature-icon {
       width: 49px;
       height: 49px;
@@ -409,7 +353,6 @@
       color: var(--pine);
       margin-bottom: 19px
     }
-
     .feature-icon svg {
       width: 24px;
       height: 24px;
@@ -419,31 +362,26 @@
       stroke-linecap: round;
       stroke-linejoin: round
     }
-
     .feature h3 {
       font-size: 1.1rem;
       margin: 0 0 8px;
       line-height: 1.25;
       letter-spacing: -.02em
     }
-
     .feature p {
       color: var(--muted);
       font-size: .93rem;
       margin: 0
     }
-
     .feature.feature-accent {
       background: #e9f1db
     }
-
     .steps {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
       counter-reset: step
     }
-
     .step {
       padding: 27px;
       background: var(--paper);
@@ -451,7 +389,6 @@
       border-radius: 21px;
       position: relative
     }
-
     .step-num {
       display: inline-grid;
       place-items: center;
@@ -463,45 +400,38 @@
       font-size: .9rem;
       font-weight: 850
     }
-
     .step h3 {
       font-size: 1.14rem;
       margin: 19px 0 8px;
       letter-spacing: -.03em
     }
-
     .step p {
       font-size: .93rem;
       color: var(--muted);
       margin: 0
     }
-
     .tech {
       background: var(--pine);
       color: white;
       padding: 65px 0
     }
-
     .tech-inner {
       display: flex;
       gap: 35px;
       align-items: center;
       justify-content: space-between
     }
-
     .tech h2 {
       font-size: clamp(1.9rem, 3.5vw, 2.7rem);
       letter-spacing: -.05em;
       line-height: 1.14;
       margin: 8px 0
     }
-
     .tech p {
       color: #c8ddcf;
       margin: 0;
       max-width: 460px
     }
-
     .tech-tags {
       display: flex;
       gap: 10px;
@@ -509,7 +439,6 @@
       justify-content: flex-end;
       max-width: 520px
     }
-
     .tech-tags span {
       border: 1px solid rgba(237, 255, 232, .24);
       background: rgba(255, 255, 255, .07);
@@ -518,11 +447,9 @@
       font-weight: 750;
       font-size: .86rem
     }
-
     .closing {
       padding: 85px 0
     }
-
     .closing-card {
       border-radius: 28px;
       overflow: hidden;
@@ -534,7 +461,6 @@
       justify-content: space-between;
       gap: 40px
     }
-
     .closing-card:after {
       content: "";
       position: absolute;
@@ -546,20 +472,17 @@
       border-radius: 50%;
       pointer-events: none
     }
-
     .closing h2 {
       font-size: clamp(1.9rem, 3.5vw, 3rem);
       letter-spacing: -.05em;
       line-height: 1.16;
       margin: 12px 0
     }
-
     .closing p {
       color: #597260;
       margin: 0;
       max-width: 620px
     }
-
     .closing .seal {
       z-index: 1;
       flex-shrink: 0;
@@ -572,187 +495,149 @@
       color: var(--lime);
       font-size: 3rem
     }
-
     footer {
       border-top: 1px solid var(--line);
       padding: 27px 0;
       color: var(--muted);
       font-size: .84rem
     }
-
     .footer-inner {
       display: flex;
       justify-content: space-between;
       gap: 15px;
       align-items: center
     }
-
     .footer-inner strong {
       color: var(--pine)
     }
-
     @media(max-width:800px) {
       .nav-links {
         display: none
       }
-
       .hero-inner {
         grid-template-columns: 1fr;
         padding-top: 55px;
         padding-bottom: 55px
       }
-
       .hero-art {
         max-width: 470px;
         margin: auto
       }
-
       .hero h1 {
         max-width: 650px
       }
-
       .problem {
         grid-template-columns: 1fr
       }
-
       .features {
         grid-template-columns: repeat(2, 1fr)
       }
-
       .steps {
         grid-template-columns: 1fr
       }
-
       .tech-inner {
         flex-direction: column;
         align-items: flex-start
       }
-
       .tech-tags {
         justify-content: flex-start
       }
-
       .closing-card {
         padding: 32px
       }
-
       .closing .seal {
         width: 85px;
         height: 85px;
         font-size: 2.1rem
       }
     }
-
     @media(max-width:560px) {
       .wrap {
         width: min(100% - 32px, 1140px)
       }
-
       .nav {
         min-height: 65px
       }
-
       .brand {
         font-size: 1.4rem
       }
-
       .nav-cta {
         font-size: .78rem;
         padding: 9px 13px
       }
-
       .hero-inner {
         gap: 5px
       }
-
       .hero h1 {
         font-size: clamp(2.8rem, 13.5vw, 4.1rem)
       }
-
       .hero p {
         font-size: 1rem
       }
-
       .hero-actions .btn {
         padding: 12px 17px
       }
-
       .art-label {
         font-size: .7rem;
         padding: 10px;
         bottom: 5%
       }
-
       .intro-content {
         font-size: .8rem
       }
-
       .section {
         padding: 64px 0
       }
-
       .features {
         grid-template-columns: 1fr
       }
-
       .feature {
         min-height: unset;
         padding: 25px
       }
-
       .quote {
         padding: 27px
       }
-
       .closing-card {
         padding: 30px
       }
-
       .closing .seal {
         display: none
       }
-
       .footer-inner {
         align-items: flex-start;
         flex-direction: column
       }
     }
-
     @media(prefers-reduced-motion:reduce) {
       html {
         scroll-behavior: auto
       }
-
       .btn,
       .feature {
         transition: none
       }
     }
-
     .contact-section {
       padding: 88px 0;
       background: #eaf2e8
     }
-
     .contact-layout {
       display: grid;
       grid-template-columns: .88fr 1.12fr;
       gap: 42px;
       align-items: start
     }
-
     .contact-copy h2 {
       font-size: clamp(2.1rem, 4vw, 3.5rem);
       line-height: 1.1;
       letter-spacing: -.05em;
       margin: 16px 0
     }
-
     .contact-copy p {
       max-width: 430px;
       color: #52685b
     }
-
     .contact-mini {
       margin-top: 30px;
       display: flex;
@@ -761,7 +646,6 @@
       color: #255a43;
       font-weight: 700
     }
-
     .contact-mini-icon {
       width: 44px;
       height: 44px;
@@ -771,7 +655,6 @@
       background: #d6eacb;
       font-size: 1.3rem
     }
-
     .contact-card {
       background: #fffef9;
       border: 1px solid #d5e3d3;
@@ -779,35 +662,29 @@
       box-shadow: var(--shadow);
       padding: 32px
     }
-
     .contact-card h3 {
       margin: 0 0 4px;
       font-size: 1.4rem
     }
-
     .contact-card>p {
       margin: 0 0 23px;
       color: var(--muted);
       font-size: .94rem
     }
-
     .form-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 14px
     }
-
     .contact-form label.field-label {
       display: block;
       margin-bottom: 7px;
       font-size: .87rem;
       font-weight: 750
     }
-
     .contact-form .field {
       margin-bottom: 17px
     }
-
     .contact-form input:not([type=checkbox]),
     .contact-form textarea,
     .contact-form select {
@@ -822,19 +699,16 @@
       outline: none;
       transition: border .2s, box-shadow .2s
     }
-
     .contact-form input:focus,
     .contact-form textarea:focus,
     .contact-form select:focus {
       border-color: #347e5b;
       box-shadow: 0 0 0 3px #cdebd7
     }
-
     .contact-form textarea {
       min-height: 130px;
       resize: vertical
     }
-
     .privacy-line {
       display: flex;
       align-items: flex-start;
@@ -844,12 +718,10 @@
       line-height: 1.5;
       margin: 9px 0 19px
     }
-
     .privacy-line input {
       accent-color: #226e4b;
       margin-top: 4px
     }
-
     .send-button {
       appearance: none;
       width: 100%;
@@ -861,61 +733,74 @@
       font-weight: 800;
       cursor: pointer
     }
-
     .send-button:hover {
       background: #266348
     }
-
     .send-button:disabled {
       opacity: .55;
       cursor: wait
     }
-
     .form-status {
       margin: 14px 0 0;
       font-size: .88rem;
       min-height: 1.5em
     }
-
     .form-status.error {
       color: #a12626
     }
-
     .form-status.success {
       color: #206b45
     }
-
     .antispam {
       position: absolute;
       left: -9999px;
       opacity: 0;
       pointer-events: none
     }
-
     @media(max-width:800px) {
       .contact-layout {
         grid-template-columns: 1fr;
         gap: 24px
       }
-
       .contact-section {
         padding: 64px 0
       }
     }
-
     @media(max-width:560px) {
       .contact-card {
         padding: 22px
       }
-
       .form-row {
         grid-template-columns: 1fr;
         gap: 0
       }
     }
+    /* Pesquisa dos visitantes e Instagram oficial */
+    .community-section { padding: 84px 0; background: #f7f8f1; }
+    .community-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+    .community-card { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 32px; border-radius: 24px; border: 1px solid var(--line); }
+    .community-card-form { background: var(--pine); color: white; }
+    .community-card-instagram { background: var(--paper); color: var(--ink); }
+    .community-icon { display: grid; place-items: center; width: 49px; height: 49px; border-radius: 14px; background: var(--lime); color: var(--pine); }
+    .community-icon svg { width: 25px; height: 25px; }
+    .community-card h3 { margin: 4px 0 0; font-size: clamp(1.4rem, 2.2vw, 1.8rem); letter-spacing: -.025em; line-height: 1.25; }
+    .community-card p { margin: 0 0 12px; max-width: 425px; }
+    .community-card-form p { color: #dceade; }
+    .community-card-instagram p { color: var(--muted); }
+    .community-button { display: inline-flex; align-items: center; justify-content: center; padding: 12px 19px; margin-top: auto; border-radius: 99px; font-weight: 800; text-align: center; transition: transform .2s; }
+    .community-button:hover { transform: translateY(-2px); }
+    .community-button-light { background: var(--lime); color: var(--pine); }
+    .community-button-dark { background: var(--pine); color: white; }
+    .footer-social { text-decoration: underline; text-underline-offset: 3px; }
+    @media(max-width:800px) {
+      .community-section { padding: 62px 0; }
+      .community-grid { grid-template-columns: 1fr; }
+      .community-card { padding: 26px; }
+      .community-button { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) { .community-button { transition: none; } }
   </style>
 </head>
-
 <body>
   <header class="sitebar">
     <div class="wrap nav"><a href="#inicio" class="brand" aria-label="AgroRisk, voltar ao início"><span
@@ -925,7 +810,7 @@
           </svg></span>AgroRisk</a>
       <nav class="nav-links" aria-label="Navegação"><a href="#sobre">Nossa ideia</a><a
           href="#funcionalidades">Funcionalidades</a><a href="#como-funciona">Como funciona</a><a
-          href="#contato">Contato</a></nav><a class="nav-cta" href="#contato">Fale conosco ↗</a>
+          href="#avaliacao">Avalie o projeto</a><a href="#contato">Contato</a><a href="https://www.instagram.com/agro.risk/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial do AgroRisk, abre em nova guia">Instagram ↗</a></nav><a class="nav-cta" href="#contato">Fale conosco ↗</a>
     </div>
   </header>
   <main>
@@ -1097,7 +982,34 @@
             CSS</span><span>MySQL</span><span>OpenWeather</span><span>Gemini</span></div>
       </div>
     </section>
-
+    <!-- Pesquisa dos visitantes e rede social oficial -->
+    <section class="community-section" id="avaliacao" aria-labelledby="avaliacao-titulo">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">Participe da nossa evolução</span>
+          <h2 id="avaliacao-titulo">O que você achou do AgroRisk?</h2>
+          <p>Se você conheceu nosso projeto na feira, queremos ouvir sua opinião. É rapidinho e ajuda nossa equipe a planejar as próximas melhorias.</p>
+        </div>
+        <div class="community-grid">
+          <article class="community-card community-card-form">
+            <span class="community-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h11v16H5V7z"/><path d="M5 7h3V4"/><path d="m9 12 2 2 4-4"/><path d="M9 17h6"/></svg>
+            </span>
+            <h3>Responda nossa pesquisa</h3>
+            <p>Conte o que você mais gostou e o que podemos melhorar. O formulário abre no Google Forms.</p>
+            <a class="community-button community-button-light" href="https://forms.gle/8BYMLVb1H39ZAds38" target="_blank" rel="noopener noreferrer" aria-label="Responder pesquisa sobre o AgroRisk no Google Forms, abre em nova guia">Responder formulário ↗</a>
+          </article>
+          <article class="community-card community-card-instagram">
+            <span class="community-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+            </span>
+            <h3>Acompanhe o AgroRisk</h3>
+            <p>Veja as novidades, fotos da apresentação e os próximos passos do projeto no nosso Instagram.</p>
+            <a class="community-button community-button-dark" href="https://www.instagram.com/agro.risk/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram oficial do AgroRisk, abre em nova guia">Visitar @agro.risk ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
     <section class="contact-section" id="contato" aria-labelledby="contato-titulo">
       <div class="wrap contact-layout">
         <div class="contact-copy"><span class="kicker">Vamos conversar?</span>
@@ -1155,14 +1067,12 @@
     </section>
   </main>
   <footer>
-    <div class="wrap footer-inner"><span><strong>AgroRisk</strong> · Projeto acadêmico · 2026</span><span>Feito para
-        apresentar nossa ideia ao público 🌱</span></div>
+    <div class="wrap footer-inner"><span><strong>AgroRisk</strong> · Projeto acadêmico · 2026</span><span>Feito para apresentar nossa ideia ao público 🌱 · <a class="footer-social" href="https://www.instagram.com/agro.risk/" target="_blank" rel="noopener noreferrer">Instagram @agro.risk ↗</a></span></div>
   </footer>
-
   <script>
-    // CONFIGURAÇÃO: antes de publicar, troque pelo e-mail que receberá os contatos.
-    // É necessário confirmar a ativação no e-mail enviado pelo FormSubmit após o primeiro teste.
-    const EMAIL_DESTINO = "SEU_EMAIL_AQUI";
+    // Identificador do FormSubmit já ativado pela equipe. Não é uma senha.
+    // Mantém o e-mail de contato fora do código-fonte público.
+    const EMAIL_DESTINO = "b434146a93f00cf2568f494052904559";
     const contactForm = document.getElementById('contact-form');
     const contactStatus = document.getElementById('contact-status');
     const sendContact = document.getElementById('send-contact');
@@ -1175,13 +1085,13 @@
       setStatus('', '');
       if (!contactForm.reportValidity()) return;
       if (document.getElementById('company-site').value) return;
-      
-    const EMAIL_DESTINO = "b434146a93f00cf2568f494052904559";
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(EMAIL_DESTINO)) {
-    setStatus('Configure um e-mail válido para receber as mensagens.', 'error');
-    return;
-    }
-      
+    // Aceita identificador de 32 caracteres do FormSubmit ou endereço de e-mail.
+      const destinoValido = /^[a-f0-9]{32}$/i.test(EMAIL_DESTINO) ||
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(EMAIL_DESTINO);
+      if (!destinoValido) {
+        setStatus('O formulário de contato precisa ser configurado pela equipe.', 'error');
+        return;
+      }
       const dados = new FormData(contactForm);
       dados.delete('_honey');
       const payload = Object.fromEntries(dados.entries());
@@ -1196,8 +1106,8 @@
           body: JSON.stringify(payload)
         });
         const result = await response.json();
-        if (!response.ok || result.success === false || result.success === 'false') throw new Error('Envio não confirmado');
-        setStatus('Solicitação recebida pelo serviço de contato! Se for a primeira mensagem, a equipe precisa confirmar a ativação por e-mail.', 'success');
+        if (!response.ok || (result.success !== true && result.success !== 'true')) throw new Error('Envio não confirmado');
+        setStatus('Mensagem enviada! Obrigado por entrar em contato com a equipe AgroRisk.', 'success');
         contactForm.reset();
       } catch (err) {
         setStatus('Não foi possível enviar agora. Tente novamente mais tarde ou fale com nossa equipe na bancada.', 'error');
@@ -1208,5 +1118,4 @@
     });
   </script>
 </body>
-
 </html>
